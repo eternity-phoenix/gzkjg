@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动列表</title>
+    <link rel="stylesheet" href="/css/page-core.css" type="text/css" />
+    <link href="/css/event.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container-body">
+    <div class="b-head event"><span class="b-head-i"></span><span class="b-head-t">活动列表</span></div>
+    <div class="art_list">
+        <ul>
+            <li>
+                <a href="/event-fish.html" target="_blank">
+                    <img src="/imgs/event-fish.jpg">
+                </a>
+                <h2><a href="/event-fish.html" target="_blank">北冥有鱼,你想咋烤!</a></h2>
+                <div class="event_status">
+                    <span class="event_status status_over">【2017年08月27日已结束】</span>
+                    2017年07月22日~2017年08月27日                        </div>
+                <div class="info">
+                    那些自然界存在过的最大的鱼                        </div>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/imgs/event-sport.jpg">
+                </a>
+                <h2><a href="#">头版征集活动开始啦!</a></h2>
+                <div class="event_status">
+                    <span class="event_status status_over">【2017年09月27日结束】</span>
+                    2017年07月22日~2017年09月27日                        </div>
+                <div class="info">
+                    头版征集                        </div>
+            </li>
+        </ul>
+        <div class="pagelistbox">
+            <a class="p active">1</a>
+            <a class="p" href="//www.bilibili.com/event?page=2">2</a>
+            <a class="p" href="//www.bilibili.com/event?page=3">3</a>
+            <a class="p" href="//www.bilibili.com/event?page=4">4</a>
+            <a class="p nextPage" href="//www.bilibili.com/event?page=2">下一页</a>
+            <div class="custom-right"><span class="result custom-right-inner">共 4 页 ，跳至</span>
+                <input type="text" class="b-input custompage custom-right-inner" u="//www.bilibili.com/event?page=[PAGE]" onkeypress="if(event.keyCode == 13) { if(parseInt($(this).val())>parseInt(4)){ $(this).val('1') } ;window.location=$(this).attr('u').replace('[PAGE]',$(this).val());}"><span class="custom-right-inner">页</span></div></div>    </div>
+</div>
+</body>
+</html>
