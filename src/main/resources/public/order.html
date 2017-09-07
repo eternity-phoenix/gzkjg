@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>门票预订</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/ticket_detail_min.css">
+    <link rel="stylesheet" href="/css/PageHeader_v2.css">
+    <style>
+        .media-right ul li {
+            width: 500px;
+        }
+    </style>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=22d3816e107f199992666d6412fa0691&plugin=AMap.ArrivalRange,AMap.Scale,AMap.Geocoder,AMap.Transfer,AMap.Autocomplete"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="/js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<div style="margin: auto 80px;">
+    <div id="j-photo-viewer" class="media-left">
+        <div id="j-preview-photo" class="attraction_photo_big" data-id="">
+            <img src="/imgs/play-1.jpg" width="500px" height="280px">
+            <!--<a href="javascript:void 0;" title="上一张" class="prev"><i></i></a>
+            <a href="javascript:void 0;" title="下一张" class="next"><i></i></a>-->
+        </div>
+        <div class="attraction_photo_small">
+            <div class="small_photo_wrap" style="width: 450px;">
+                <ul id="play_img_list">
+                    <li>
+                        <a class="current"> <img src="/imgs/play-1.jpg">
+                        <span><i></i></span> </a>
+                        <a class=""> <img src="/imgs/play-2.jpg">
+                        <span><i></i></span> </a>
+                        <a class=""> <img src="/imgs/play-3.jpg">
+                        <span><i></i></span> </a>
+                        <a class=""> <img src="/imgs/play-4.jpg">
+                        <span><i></i></span> </a>
+                        <a class=""> <img src="/imgs/play-5.jpg">
+                        <span><i></i></span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="media-right">
+        <h2 class="media-title">贵州科技馆</h2>
+        <p>&nbsp;</p>
+        <ul>
+            <li style="">
+                <em>景点地址</em>
+                <span>
+                        贵州省贵阳市瑞金南路138号
+                    </span>
+                <a class="map-icon goToAnchor" href="#J-Jtzn" data-target="J-Jtzn" style=";"><i></i>查看地图</a>
+            </li>
+            <li class="time" style=";">
+                <em>开放时间</em>
+                <span class="j-limit">售票时间：10：00——15：30 开馆时间：10：00——17：00</span>
+            </li>
+            <li class="time" style=";">
+                <em>收费标准</em>
+                <span class="j-limit">主题展厅 免费参观 少儿科技乐园 成人：10元   学生：5</span>
+            </li>
+            <li class="promise" style=";">
+                <em>服务承诺</em>
+                <div id="J-MediaLabel" class="media-label-wrapper">
+                    <span class="media-label">入馆保证</span>
+                    <div class="jmp pop-content">
+                        预订此科技馆门票，到科技馆售票处兑换门票。
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="grade" id="J-grade" data-value="4.6" style=";">
+                <span class="small_c">
+                    <span class="b" style="width: 72px;"></span>
+                </span>
+            <a href="javascript:void(0);" class="mark goToAnchor" data-target="J-Yhdp">查看3915条点评</a>
+        </div>
+        <div id="J-LatestComment" class="comment" style=";"><i class="head"></i> <span>本身不太期待的科技馆，带儿子随便玩玩，没想到还可以，感觉这里虽然玩的项目有些小儿科但听到那些服务人员快乐的给我们解说和工作，一下子就让我找到感觉，原来快乐有时候就是那一瞬间发自自己内心深处的感动，今晚，我们很快乐。</span>
+            <i class="tail"></i></div>
+
+        <div class="media-price" style="right: 99px; top: 10px">
+            <i class="head"></i>
+            <div class="price-box">
+                <span>
+               ¥ 5/人 起
+                </span>
+            </div>
+            <i class="tail"></i>
+        </div>
+    </div>
+
+    <div class="content-left" style="width:1090px;">
+        <div class="content-tab-wrapper">
+            <ul id="J-content-tab" class="content-tab layoutfix" style="width:1090px;">
+                <li class="cursor"><a href="javascript: void 0;">预订须知</a></li>
+                <a href="javascript:void(0);" class="red-big-btn goToAnchor" data-target="booking-wrapper">立刻预订</a>
+            </ul>
+        </div>
+
+        <div id="J-content" class="d-wrapper">
+            <!--预订须知-->
+            <!--预订须知-->
+            <div class="c-wrapper no-border-top layoutfix">
+                <div class="c-wrapper-style">
+                    <i class="detail-icon-1">
+                        预订须知
+                    </i>
+                    <i class="detail-icon-t">
+                    </i>
+                </div>
+                <dl class="c-wrapper-info">
+                    <dd style="">
+                        <strong>
+                            优待政策
+                        </strong>
+                        <div>
+
+                        </div>
+                        <div>
+                            1．周一、二为闭馆日，周三至周日为开馆日，节假日不休，开馆时间具体安排如下：售票时间为10：00——15：30 开馆时间为10：00——17：00 粗略参观约需2小时，请在参观过程中把握好时间，并于闭馆前20-30分钟离馆，以便管理员做好清理工作。
+
+                        </div>
+                    </dd>
+                    <dd>
+                        <strong>
+                            预订限制
+                        </strong>
+                        <div>
+
+                            身高1.5米以上（含1.5米）的儿童及成人须购买成人日场门票。每名购票成人限带一名身高低于1.2米（不含1.2米）的儿童入馆。<br><font color="red">一个手机号、一个身份证号在所有渠道（不仅限于携程）一天最多能预订5张票；如购买超过5张，请提供不同的手机号和身份证号下单（门票当日有效）。当天票请在兑换当天使用。</font>
+                        </div>
+                    </dd>
+                    <dd style="">
+                        <strong>
+                            温馨提示
+                        </strong>
+                        <div>
+                            贵州科技馆实行“一票通玩”制，但馆内交通、雨衣及投币游戏等需要另外付费。<br>游客每人限享受一种优惠政策，拥有享受多重折扣资格的，按最低折扣计算惠票入馆。<br>1.2米（不含1.2米）以下儿童、60周岁（含60周岁）以上长者、残疾人入园须有安全监护能力的购票成人陪同入馆。<br>请凭身份证或者华侨城短信内二维码验证入馆，具体操作在景区闸机口会有提示，为防止因临时网络问题造成二维码无法打开的情况，请提前将华侨城短信内二维码保存，若身份证与二维码均未能成功入馆，请凭短信至游客中心处理。<br>5.8日23:00-5.9日4:00期间系统维护将无法购买成功，请勿下单，谢谢！
+                        </div>
+                    </dd>
+                    <dd>
+                        <strong>
+                            安全指南
+                        </strong>
+                        <div>
+                            旅游安全是旅游的生命线，为保障游客“住得安心、吃得放心、玩的舒心”，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。出行前，提醒您仔细阅读相关内容，重视旅游安全，使您的出游真正成为“快乐之游、难忘之游、收获之游”。
+                            <a rel="nofollow"
+                               target="_blank">
+                                查看详情
+                            </a>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="gray">
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
+            <div id="divJZAD1" class="banner-middle" style="display: none;"></div>
+            <!--景点简介-->
+            <div id="J-Jdjj" class="c-wrapper" style="display:none;">
+                <div class="c-wrapper-style">
+                    <i class="detail-icon-2">景点简介</i>
+                    <i class="detail-icon-t"></i>
+                </div>
+                <div class="feature-wrapper">
+
+                    <ul>
+                        <li>
+                            <span>特色1</span>
+                            <p>华中城市旅游新名片！</p>
+                        </li>
+                        <li>
+                            <span>特色2</span>
+                            <p>复合型、生态型和创新型的大型文化公园！</p>
+                        </li>
+                        <li>
+                            <span>特色3</span>
+                            <p>集多年积淀之大成，更以荆楚文化特色，充满着不同以往的人文气质！</p>
+                        </li>
+                    </ul>
+                    <div class="feature-content">
+                        <p></p>
+                        <p style="text-align: left; line-height: normal; background: white;">
+                            <strong>欢乐谷一期，让你玩到爽！</strong></p>
+                        <p style="white-space: normal;"><img alt="武汉欢乐谷 (34)" data-src=""
+                                                             src="https://dimg02.c-ctrip.com/images/fd/tg/g3/M04/98/3E/CggYG1bdU2iARgWoAAIDXEMIj_E441_C_422_236.jpg"
+                                                             style="opacity: 1;">&nbsp;<img alt="武汉欢乐谷 (3)" data-src=""
+                                                                                            src="https://dimg06.c-ctrip.com/images/fd/tg/g4/M04/B8/16/CggYHVbdUqmANFmxAAGIrxQXcCQ225_C_422_236.jpg"
+                                                                                            style="opacity: 1;"></p>
+                        <p style="white-space: normal;"><strong>【武汉欢乐谷日场】</strong></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【木翼双龙】</p>
+                        <p style="white-space: normal;">双龙木质过山车，木翼双龙主体结构上搭载两条分别长达1150米和1200米的红蓝双轨迂回曲折，双轨相向飞腾，快感不言而喻！</p>
+                        <p style="white-space: normal;"><img alt="木翼双龙" data-src=""
+                                                             src="https://dimg02.c-ctrip.com/images/fd/tg/g3/M03/61/34/CggYGlXmqUuAPyaJAAGVEVTCn2s722_C_422_236.jpg"
+                                                             style="opacity: 1;">&nbsp;<img alt="lan_1709_副本"
+                                                                                            data-src=""
+                                                                                            src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M08/6A/78/CggYHlXmqS6ACg-oAAIeAGTqn1Q910_C_422_236.jpg"
+                                                                                            style="opacity: 1;"></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【极速飞车】</p>
+                        <p style="white-space: normal;">
+                            极速飞车位于极速世界主题区，如带状般的红色轨道直插云霄。每小时135千米的最高时速让你瞬间上升到60米的高空，然后又俯冲至湖底隧道，体验上天遁地般的刺激。</p>
+                        <p style="white-space: normal;"><img alt="极速飞车-1"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M03/6A/B2/CggYHVXmqTiAUDxdAAGFInbaIi0082_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="极速飞车2"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g3/M02/61/33/CggYGlXmqTqANLx7AAFyCrnxk7I805_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【完美风暴】</p>
+                        <p style="white-space: normal;">
+                            完美风暴是飓风湾主题区的标志性项目，在区域入口形成庞大的飓风。坐在座舱里，迎面是喷涌而出的水花，让人彷佛置身于波涛汹涌的巨浪中。</p>
+                        <p style="white-space: normal;"><img alt="完美风暴1"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M05/6A/B4/CggYHVXmqViAIyCEAAGzORk6OL0689_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="完美风暴2"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M09/6A/7B/CggYHlXmqVuAJi2-AAIfYYmPtVc307_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【太阳神车】</p>
+                        <p style="white-space: normal;">这一台如大摆锤一般的庞大巨物,将带着你超越失重状态和加载状态下的极限！随着圆盘的大幅摇摆,眼前的世界也颠倒成另一幅模样。</p>
+                        <p style="white-space: normal;"><img alt="太阳神车2"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g3/M05/61/34/CggYGlXmqVKANCp2AADvlIYbm4M956_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="太阳神车_1"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M00/6A/B3/CggYHVXmqVCATW0-AAECSg_ZYio710_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【天地双雄】</p>
+                        <p style="white-space: normal;">
+                            天地双雄坐落在欢乐时光主题区，两根高达50米的铁塔连接天与地。高耸入云的两根铁塔拥有超能力,能瞬间将你抬升至天空,又迅速跌回至地面,在天与地的来回穿梭间感受快感吧。</p>
+                        <p style="white-space: normal;"><img alt="天地双雄"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M02/6A/B3/CggYHVXmqVWAS10lAAFH6qZYQ3Y938_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="lan_7697_副本_副本"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M09/6A/78/CggYHlXmqTCAdgTKAAFsFOGmw60612_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【激流勇进】</p>
+                        <p style="white-space: normal;">
+                            室内激流勇进组合，激流勇进的最高处达30米，位于山体内部，乘船逆流而上达最高点，猛然间，载着20名游客的船会自最高处飞驰而下，疾驰声、尖叫声、激起的水声一起来袭，游客回过神看到水中激起的巨幕水帘，不禁感叹激流勇进的巨大威力与魅力。</p>
+                        <p style="white-space: normal;"><img alt="激流勇进2"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M01/6A/B2/CggYHVXmqTaANCqXAAHjjj6pQdc768_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="激流勇进"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M0A/6A/B1/CggYHVXmqTOASxVvAAF-A9vtkUo265_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【魔幻剧场】</p>
+                        <p style="white-space: normal;">全球至尊4D动感影院，逼真的特效，让你置身其中，与他们一起战胜邪恶。</p>
+                        <p style="white-space: normal;"><img alt="4d影院"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g3/M0B/61/32/CggYGlXmqSaAdryRAAGdZFThjpg146_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="4d影院2"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M01/6A/B1/CggYHVXmqSiAIGBJAAFOWMWq2sw446_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">
+                            武汉欢乐谷----【摩天塔】，摩天塔矗立于渔光岛上，120米的至尊高度决定了其俯览天下胜景的博大胸怀，直插云霄的塔身连接天地灵气。</p>
+                        <p style="white-space: normal;">
+                            武汉欢乐谷----【野人谷漂流】，可谓惊心动魄,飞流而下时四溅的水花,峰回路转时期待的心情,缓缓前行时沿途的风景都将让你的心砰砰乱跳,回味良久。</p>
+                        <p style="white-space: normal;"><img alt="摩天塔"
+                                                             data-src="https://dimg02.c-ctrip.com/images/fd/tg/g3/M05/68/4C/CggYGVXmqUiAb2qzAAEKDCVhqpU590_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="野人谷漂流"
+                                                                                 data-src="https://dimg02.c-ctrip.com/images/fd/tg/g4/M05/6A/86/CggYHFXmqV6AcLW6AAI38aveymQ644_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;"><strong>【武汉欢乐谷夜场】</strong></p>
+                        <p style="white-space: normal;">玩设备，夜场设备-不一样的精彩！</p>
+                        <p style="white-space: normal;">武汉欢乐谷----【欢乐谷时光】+【DSICO】</p>
+                        <p style="white-space: normal;"><img alt="van_9514_副本"
+                                                             data-src="https://dimg07.c-ctrip.com/images/fd/tg/g4/M08/FB/74/CggYHFYWPm-ATPqFAAHE4mt1ytE690_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="武汉欢乐谷12"
+                                                                                 data-src="https://dimg07.c-ctrip.com/images/fd/tg/g6/M03/CE/47/CggYs1bhL7OAYajLAAFxwh2cQDE967_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal;">武汉欢乐谷----【飓风飞椅】+【能量风暴】</p>
+                        <p style="white-space: normal;"><img alt="lan_7680_副本"
+                                                             data-src="https://dimg03.c-ctrip.com/images/fd/tg/g3/M04/F5/25/CggYGVYWPmSAB6IVAAGY2POgqaA199_C_422_236.jpg"
+                                                             src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                             style="">&nbsp;<img alt="lan_7691_副本"
+                                                                                 data-src="https://dimg06.c-ctrip.com/images/fd/tg/g3/M04/E4/DA/CggYGlYWPmeAI6mnAAHAr9xbsnY991_C_422_236.jpg"
+                                                                                 src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg"
+                                                                                 style=""></p>
+                        <p style="white-space: normal; background: white;">
+                            <strong>武汉欢乐谷全新亲子主题区--</strong><strong>甜品王国，</strong><strong>5月28日盛大开放!</strong><strong>玩不腻,更亲密!</strong>
+                        </p>
+                        <p style="white-space: normal;"><strong>一个用甜品打造的“趣”乐园</strong></p>
+                        <p style="white-space: normal;"><strong>一个有11大亲子设备的童话王国</strong></p>
+                        <p style="white-space: normal;"><strong>一个全家欢乐开怀的甜蜜世界</strong></p>
+                        <p style="white-space: normal;">
+                            “甜品王国”全新打造11大亲子游乐设备，包括重金引进的3大科技体感互娱设备和8大创新亲子项目，用梦幻甜品打造现实童话乐园。</p>
+                        <p style="white-space: normal;">&nbsp;蛋糕皇宫-360度全景VR体验馆/疯狂下午茶-激情炫舞转杯</p>
+                        <p style="white-space: normal;"><img
+                                data-src="https://dimg06.c-ctrip.com/images/100h0g0000007s73d7126_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国10" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img
+                                data-src="https://dimg02.c-ctrip.com/images/10050g0000007s4ko43C3_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国09" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p style="white-space: normal;">&nbsp;梦幻棒棒糖-超级激战飞船/棉花糖跳跳-梦幻魔力战车</p>
+                        <p style="white-space: normal;"><img
+                                data-src="https://dimg06.c-ctrip.com/images/10010g0000007rx6p551F_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国05" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img
+                                data-src="https://dimg03.c-ctrip.com/images/100q0g0000007ruod3F0D_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国08" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p style="white-space: normal;">&nbsp;甜蜜钟楼-轻蹦极体验机/靴子警局-大型儿童攀爬馆</p>
+                        <p style="white-space: normal;"><img
+                                data-src="https://dimg02.c-ctrip.com/images/100w0g0000007rvhlEB7F_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国06" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img
+                                data-src="https://dimg03.c-ctrip.com/images/100o0g0000007rw4i9C68_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国03" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p style="white-space: normal;">&nbsp;奶酪泡泡馆-室内亲子射击营/颠三倒四机-VR实感激战轨道车</p>
+                        <p style="white-space: normal;"><img
+                                data-src="https://dimg02.c-ctrip.com/images/100h0g0000007s73b5060_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国04" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img
+                                data-src="https://dimg02.c-ctrip.com/images/10020g0000007rvwyD1E3_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国07" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p style="white-space: normal;">&nbsp;焦糖沙漠影院-4D环幕特技影院/神圣时刻-高空失重弹跳机</p>
+                        <p style="white-space: normal;"><img
+                                data-src="https://dimg07.c-ctrip.com/images/10040g0000007rw2bA665_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国02" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">&nbsp;<img
+                                data-src="https://dimg09.c-ctrip.com/images/100f0g0000007rv2cE580_C_422_236.jpg"
+                                alt="武汉欢乐谷——甜品王国01" src="http://pic.c-ctrip.com/ticketonline/place_hold_1.jpg" style="">
+                        </p>
+                        <p style="white-space: normal;"><span style="text-indent: 32px;">&nbsp;“甜品王国”为游客打造亲密、刺激、科技的游乐体验，全方位打造一座“舌尖上的乐园”，甜蜜加倍，玩不腻，更亲密！</span>
+                        </p>
+                        <p style="white-space: normal;"></p>
+                        <p style="white-space: normal;"></p>
+                        <p style="white-space: normal;"></p>
+                        <p style="white-space: normal;"></p>
+                        <p><br></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--交通指南-->
+            <div id="J-Jtzn" class="c-wrapper basefix">
+                <div class="c-wrapper-style">
+                    <i class="detail-icon-3">交通指南</i>
+                    <i class="detail-icon-t"></i>
+                </div>
+                <div id="mapDiv">
+                    <div id="map_img" class="map_pop_loading" style="display: none;">地图加载中...</div>
+                    <div id="map-cover" class="map-cover" style="top: 0px;"></div>
+                </div>
+
+                <div class="feature-traffic">
+                    <h3>交通信息</h3>
+                    公交线路之一：218路，全程约18.4公里<br />
+
+                    1、从贵阳新世界花园乘坐218路,经过19站, 到达次南门站<br />
+
+                    2、步行约70米,到达贵州科技馆<br />
+                    <br />
+
+
+                    公交线路之二：218路，全程约18.1公里<br />
+
+                    1、从贵阳金阳新世界花园步行约290米,到达金阳新世界站<br />
+
+                    2、乘坐218路,经过17站, 到达次南门站<br />
+
+                    3、步行约70米,到达贵州科技馆<br />
+                    <br />
+
+
+                    公交线路之三：218路，全程约16.3公里<br />
+
+                    1、从贵阳市公安交管局乘坐218路,经过15站, 到达次南门站<br />
+
+                    2、步行约70米,到达贵州科技馆<br />
+                    <br />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var map = new AMap.Map('map-cover', {
+        resizeEnable: true,
+        zoom:14,
+        center: [106.7013037000, 26.5761958600]
+    });
+    var content= '<div style="border: solid 1px red;color: red;float: left;width: 70px;background-color: rgba(255,0,0,0.1);top:10px;left:10px;">贵州科技馆</div>';
+    var icon = new AMap.Icon({
+        image : 'http://vdata.amap.com/icons/b18/1/2.png',//24px*24px
+        //icon可缺省，缺省时为默认的蓝色水滴图标，
+        size : new AMap.Size(24,24)
+    });
+
+    marker = new AMap.Marker({
+        position: [106.7013037000, 26.5761958600],
+        title: '贵州科技馆',
+        offset: new AMap.Pixel(0,0),
+        map: map
+    });
+    gzkjg = new AMap.Marker({
+        content: content,
+        position: [106.7013037000, 26.5761958600],
+        title: '贵州科技馆',
+        offset: new AMap.Pixel(20,20),
+        map: map
+    });
+    map.setCenter(gzkjg.getPosition());
+
+    var current_idx = 0;
+    setInterval(function(){
+        $($("#play_img_list > li > a")[current_idx]).removeClass("current");
+        current_idx++;
+        if(current_idx == 5)
+            current_idx = 0
+        $($("#play_img_list > li > a")[current_idx]).addClass("current");
+        $("#j-preview-photo img").attr('src', $($("#play_img_list > li > a img")[current_idx]).attr('src'));
+    }, 3000);
+</script>
+</html>
